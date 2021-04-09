@@ -1,5 +1,5 @@
 /*
-*
+ *
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
  *
@@ -26,11 +26,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      
       <div
         style={{
           margin: `0 auto`,
-          width:'100vw',
+          width: "100vw",
         }}
       >
         <main>{children}</main>
