@@ -14,7 +14,7 @@ const DeviceInfo = () => {
           formats={["AUTO", "WEBP", "AVIF"]}
         />
       </div>
-      <div className="w-full flex justify-center md:w-9/12 md:m-auto  lg:w-2/4 p-10 ">
+      <div className="w-full flex justify-start md:w-9/12 md:m-auto  lg:w-2/4 p-10 ">
         <div className="w-4/5 lg:w-3/4">
           <h1 className="text-4xl text-indigo-800 md:text-5xl lg:text-6xl font-extrabold">
             SKYGO Portable WiFi

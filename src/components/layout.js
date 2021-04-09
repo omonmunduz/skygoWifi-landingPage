@@ -34,13 +34,9 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer
-          style={{
-            marginTop: `2rem`,
-          }}
+          className="bg-indigo-600  p-5 flex justify-center"
         >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+         <p className="text-white text base font-extrabold"> © {new Date().getFullYear()}, SkyGo All Rights Reserved </p>
         </footer>
       </div>
     </>

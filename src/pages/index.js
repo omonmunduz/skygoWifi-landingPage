@@ -1,5 +1,4 @@
 import * as React from "react"
-//import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { useSpring, animated } from "react-spring"
 
@@ -8,27 +7,13 @@ import About from "../components/about"
 import DeviceInfo from "../components/deviceInfo"
 import IceInfo from "../components/iceInfo"
 import Compare from "../components/compare"
+import SignUp from "../components/SignUp";
 import SEO from "../components/seo"
 
-/*
-<StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-*/
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
 const trans1 = (x, y) => `translate3d(${x / 10}px, ${y / 10}px, 0)`
 
-/*
-const trans2 = (x, y) => `translate3d(${x / 8 + 35}px,${y / 8 - 230}px,0)`
-const trans3 = (x, y) => `translate3d(${x / 6 - 250}px,${y / 6 - 200}px,0)`
-const trans4 = (x, y) => `translate3d(${x / 3.5}px,${y / 3.5}px,0)`
-*/
 
 const IndexPage = () => {
   const [props, set] = useSpring(() => ({
@@ -40,7 +25,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="SkyGo Wifi" />
       <div className="w-screen flex flex-wrap bg-indigo-900 p-5 ">
-        <div className="w-full flex md:justify-end md:w-9/12 md:m-auto  lg:w-2/4 p-10">
+        <div className="w-full flex md:justify-end md:w-6/12 md:m-auto  lg:w-1/3 p-10">
           <div className="w-screen lg:w-3/4">
             <h1 className="text-4xl text-white md:text-5xl lg:text-6xl font-extrabold">
               SKYGO <span className="text-yellow-200">Portable WiFi</span>
@@ -53,13 +38,13 @@ const IndexPage = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               rhoncus sit amet massa nec posuere. Duis viverra consectetur ante
             </p>
-            <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+            <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded relative z-12">
               Get Started
             </button>
           </div>
         </div>
         <div
-          className="w-full md:w-9/12 md:m-auto flex md:justify-start lg:w-2/4 p-5"
+          className="w-full md:w-9/12 md:m-auto flex md:justify-center lg:w-3/5 p-5"
           onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
         >
           <animated.div
@@ -77,17 +62,8 @@ const IndexPage = () => {
           </animated.div>
         </div>
       </div>
-      <div className="bg-indigo-300 ">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#312e81"
-            fill-opacity="1"
-            d="M0,64L48,64C96,64,192,64,288,64C384,64,480,64,576,101.3C672,139,768,213,864,213.3C960,213,1056,139,1152,133.3C1248,128,1344,192,1392,224L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-          ></path>
-        </svg>
-      </div>
       <About />
-      <div className="bg-indigo-200">
+      <div className="bg-indigo-200 relative z-15 -mb-16">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#a5b4fc"
@@ -108,6 +84,7 @@ const IndexPage = () => {
         </svg>
       </div>
       <Compare />
+      <SignUp />
     </Layout>
   )
 }
