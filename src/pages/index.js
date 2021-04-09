@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 import About from "../components/about"
 import DeviceInfo from "../components/deviceInfo"
 import IceInfo from "../components/iceInfo"
-import WifiWebsite from "../components/wifiWebsite"
+import Compare from "../components/compare"
 import SEO from "../components/seo"
 
 /*
@@ -42,7 +42,7 @@ const IndexPage = () => {
       <div className="w-screen flex flex-wrap bg-indigo-900 p-5 ">
         <div className="w-full flex md:justify-end md:w-9/12 md:m-auto  lg:w-2/4 p-10">
           <div className="w-screen lg:w-3/4">
-            <h1 className="text-4xl text-white md:text-5xl lg:text-6xl">
+            <h1 className="text-4xl text-white md:text-5xl lg:text-6xl font-extrabold">
               SKYGO <span className="text-yellow-200">Portable WiFi</span>
             </h1>
             <p className="text-base text-gray-400">
@@ -107,7 +107,7 @@ const IndexPage = () => {
           ></path>
         </svg>
       </div>
-      <WifiWebsite />
+      <Compare />
     </Layout>
   )
 }
