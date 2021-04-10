@@ -1,6 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { useSpring, animated } from "react-spring"
+import './index.css'
 
 import Layout from "../components/layout"
 import About from "../components/about"
@@ -24,7 +25,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="SkyGo Wifi" />
-      <div className="w-screen flex flex-wrap bg-indigo-900 p-5 ">
+      <div className="w-screen flex flex-wrap bg-indigo-900 p-5" id="main-bg">
         <div className="w-full flex md:justify-end md:w-6/12 md:m-auto  lg:w-1/3 p-10">
           <div className="w-screen lg:w-3/4">
             <h1 className="text-4xl text-white md:text-5xl lg:text-6xl font-extrabold">
