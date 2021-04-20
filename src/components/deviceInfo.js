@@ -3,8 +3,8 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const DeviceInfo = () => {
   return (
-    <section className="w-screen flex flex-wrap bg-indigo-200 p-5">
-      <div className="w-full md:w-9/12 md:m-auto flex justify-end lg:w-2/4 p-10 ">
+    <section className="w-screen flex flex-wrap p-5">
+      <div className="w-full md:w-9/12 md:m-auto flex justify-end lg:w-2/4 p-3 ">
         <StaticImage
           src="../images/skygoWifi.jpg"
           width={550}
@@ -20,16 +20,16 @@ const DeviceInfo = () => {
             SKYGO Portable WiFi
           </h1>
           <p className="text-base text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            rhoncus sit amet massa nec posuere. Duis viverra consectetur ante
+            Travel with ease with Skygo Portable WiFi device.
+            Skygo wifi supports golbal coverage, no SIM card needed
           </p>
           <p className="text-base text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            rhoncus sit amet massa nec posuere. Duis viverra consectetur ante
+            Ready to travel ? Click the button below and and you can buy, rent
+            or refill your device 
           </p>
-          <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+          <a href="http://orders.skygowifi.com/ordersbeta/Index.aspx" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
             Get Started
-          </button>
+          </a>
         </div>
       </div>
     </section>
