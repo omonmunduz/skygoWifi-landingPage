@@ -1,6 +1,5 @@
 import * as React from "react"
 import {Roll, Fade, Bounce} from 'react-reveal';
-import { StaticImage } from "gatsby-plugin-image"
 import './index.css'
 
 import SEO from "../components/seo"
@@ -10,8 +9,6 @@ import DeviceInfo from "../components/deviceInfo"
 import IceInfo from "../components/iceInfo"
 import Compare from "../components/compare"
 import SignUp from "../components/SignUp";
-
-
 
 
 const IndexPage = () => {
@@ -25,9 +22,7 @@ const IndexPage = () => {
       <Fade right>
         <About />
       </Fade>
-      <Fade left>
         <IceInfo />
-      </Fade>
       <Bounce bottom>
         <Compare />
       </Bounce>
