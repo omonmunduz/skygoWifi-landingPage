@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const IceInfo = () => {
   return (
     <>
-    <section className="w-screen flex flex-wrap pt-2 pb-16 ">
+    <section className="w-full flex flex-wrap pt-2 pb-16 ">
       <div className="w-full md:w-9/12 md:m-auto flex justify-end lg:w-2/4 p-13 ">
         <StaticImage
           src="../images/ice.jpg"

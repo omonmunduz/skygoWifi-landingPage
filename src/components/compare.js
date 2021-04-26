@@ -3,9 +3,9 @@ import React from "react"
 
 const Compare = () => {
   return (
-    <section className="relative z-10 w-screen text-center p-5 bg-yellow-200">
+    <section className="w-full text-center p-5 ">
       <div>
-        <h1 className="text-indigo-800 text-4xl md:text-5xl lg:text-6xl">
+        <h1 className="text-indigo-600 text-4xl md:text-5xl lg:text-6xl">
           STAY CONNECTED AT HOME <br /> AND ON THE GO
         </h1>
       </div>
@@ -99,7 +99,7 @@ const Compare = () => {
               </td>
             </tr>
             <tr>
-              <td>CONNECT UP TO 10 DEVICES</td>
+              <td>INSTANT CONNECTION</td>
               <td>
                 <StaticImage
                   src="../images/close.png"

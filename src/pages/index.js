@@ -1,36 +1,25 @@
 import * as React from "react"
-import {Roll, Fade, Bounce} from 'react-reveal';
-import './index.css'
-
-import SEO from "../components/seo"
 import Layout from "../components/layout"
-import About from "../components/about"
-import DeviceInfo from "../components/deviceInfo"
-import IceInfo from "../components/iceInfo"
-import Compare from "../components/compare"
-import SignUp from "../components/SignUp";
+import SEO from "../components/seo"
+import Hero from '../components/hero';
+import Intro from '../components/intro';
+import Features from '../components/features';
+import Compare from '../components/compare';
+import DeviceInfo from '../components/deviceInfo';
+import IceInfo from '../components/iceInfo';
+import SignUp from '../components/SignUp';
 
-
-const IndexPage = () => {
-
-  return (
-    <Layout>
-      <SEO title="SkyGo Wifi" />
-      <Roll left>
-        <DeviceInfo />
-      </Roll>
-      <Fade right>
-        <About />
-      </Fade>
-        <IceInfo />
-      <Bounce bottom>
-        <Compare />
-      </Bounce>
-      <Bounce left>
-       <SignUp />
-      </Bounce>
-    </Layout>
-  )
-}
+const IndexPage = () => (
+  <Layout>
+    <SEO title="Home" />
+    <Hero />
+    <Intro />
+    <Features />
+    <DeviceInfo />
+    <IceInfo />
+    <Compare />
+    <SignUp />
+  </Layout>
+)
 
 export default IndexPage

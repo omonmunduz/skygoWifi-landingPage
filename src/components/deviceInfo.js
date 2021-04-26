@@ -3,36 +3,38 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const DeviceInfo = () => {
   return (
-    <section className="w-screen flex flex-wrap p-5">
-      <div className="w-full md:w-9/12 md:m-auto flex justify-end lg:w-2/4 p-3 ">
+    <>
+    <section className="w-full flex flex-wrap pt-2 pb-16 ">
+      <div className="w-full md:w-9/12 md:m-auto flex justify-end lg:w-2/4 p-13 ">
         <StaticImage
-          src="../images/skygoWifi.jpg"
+          src="../images/skygo-hotspot.jpg"
+          alt="Skygo Wifi device"
           width={550}
-          height={600}
           quality={95}
-          alt="SkyGo Portable Wifi device"
           formats={["AUTO", "WEBP", "AVIF"]}
         />
       </div>
       <div className="w-full flex justify-start md:w-9/12 md:m-auto  lg:w-2/4 p-10 ">
         <div className="w-4/5 lg:w-3/4">
           <h1 className="text-4xl text-indigo-800 md:text-5xl lg:text-6xl font-extrabold">
-            SKYGO Portable WiFi
+            Skygo WiFi 
           </h1>
           <p className="text-base text-gray-400">
-            Travel with ease with Skygo Portable WiFi device.
-            Skygo wifi supports golbal coverage, no SIM card needed
+          1) Power On.<br/>
+          Make sure the device is fully charged. Turn it on.
           </p>
           <p className="text-base text-gray-400">
-            Ready to travel ? Click the button below and and you can buy, rent
-            or refill your device 
+          2) Identify WiFi hotspot.<br/>
+          Select the wifi hotspot name form your networks the password to connect Successfully.
           </p>
-          <a href="http://orders.skygowifi.com/ordersbeta/Index.aspx" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-            Get Started
-          </a>
+          <p className="text-base text-gray-400">
+          2) Enjoy Unlimited  WiFi.<br/>
+          Now you're free to enjoy Wifi wherever you go.
+          </p>
         </div>
       </div>
     </section>
+    </>
   )
 }
 export default DeviceInfo
